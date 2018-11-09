@@ -1,8 +1,30 @@
 <style>
-	html {
-		background: gray;
+	html{
+		font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+		font-size: 20px;
+	}
+	button{
+		font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+		font-size: 20px;
 	}
 </style>
 
 <html>
+<div style='border-radius: 10px; background:#aabedd; margin:auto; height:110px; width:260px; margin-top:15%; text-align:center;'>
+	<form onsubmit="myFunction()">
+		How Many People Are You Serving?<br><br>
+		<input type="text" style="width:50px; font-size:22px;" autofocus>
+	</form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script>
+		function myFunction() {
+			alert('You need '+Math.round(Math.random()*100).toString()+' potatoes!')
+		}
+		</script>
+
+<script>
+
 </html>
